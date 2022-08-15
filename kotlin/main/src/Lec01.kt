@@ -26,10 +26,6 @@ fun main() {
 
     val person = Person("사람")
     println(person.name)
-    
 
-}
-
-class Person(var name: String) {
 
 }
