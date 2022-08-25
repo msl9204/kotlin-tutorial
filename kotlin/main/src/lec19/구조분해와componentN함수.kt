@@ -28,7 +28,12 @@ fun main() {
 data class Person(
     val name: String,
     val age: Int
-)
+) {
+    lateinit var hobby: String
+    override fun toString(): String {
+        return "name=$name age=$age hobby=$hobby"
+    }
+}
 
 // non data class 는 아래처럼 만들어주면 된다.
 class PersonNonDataClass(
